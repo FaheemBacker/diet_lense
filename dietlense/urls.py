@@ -26,6 +26,7 @@ urlpatterns = [
     path('profile/<int:pk>',ProfileRetriveView.as_view()),
     path('user/<int:pk>',UserRetriveView.as_view()),
     path('foodlog',Foodlogcreateview.as_view()),
-    path('foodfunc/<int:pk>',FoodlogFunctions.as_view())
+    path('foodfunc/<int:pk>',FoodlogFunctions.as_view()),
+    path("summary",DietSummaryView.as_view())
     
 ]
